@@ -62,8 +62,7 @@ func generate_near(NS *mat.Dense, S_good *mat.Dense) (*mat.Dense, int) {
 				  sum_col_ns = sum_col_ns + NS.At(i, j)
 			  }
 			  // この範囲に各行列の合計値がなれば終了
-			  if !(sum_col_ns < 1.5 && sum_col_ns >= 0.95) {
-				  fmt.Printf("%v\n", sum_col_ns)
+			  if !(sum_col_ns < 1.1 && sum_col_ns >= 0.95) {
 				  penalty = penalty + 1
 			  }
 		  }
