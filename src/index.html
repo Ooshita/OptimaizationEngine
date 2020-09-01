@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title></title>
+    <script language="javascript" type="text/javascript">
+        function OnButtonClick() {
+            message = "1行目の合計値 40.0</br>2行目の合計値 52.0</br>3行目の合計値 40.0</br>4行目の合計値 52.0</br>5行目の合計値 48.0</br>6行目の合計値 56.0</br>7行目の合計値 40.0</br>169回目の実行</br>ペナルティー値 0</br>全体のペナルティーの値 1</br>[[8. 4. 0. 8. 4. 0. 0. 8. 8. 8.]</br>[8. 8. 0. 8. 8. 4. 0. 8. 0. 0.]</br>[4. 8. 8. 0. 4. 4. 8. 0. 8. 0.]</br>[4. 8. 0. 0. 0. 0. 8. 8. 8. 8.]</br>[4. 4. 4. 8. 4. 4. 0. 0. 8. 4.]</br>[0. 8. 8. 4. 4. 4. 8. 8. 0. 8.]</br>[0. 4. 0. 4. 0. 8. 8. 8. 4. 4.]]</br>";
+            target = document.getElementById("output");
+            target.innerHTML = message;
+            console.log(message);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="最適化を実行" onclick="OnButtonClick();"/><br />
+    <br />
+    <div id="output"></div>
+</body>
+</html>
