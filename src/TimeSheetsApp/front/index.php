@@ -11,6 +11,7 @@
 <head>
   <meta charset="utf-8" />
   <title>sample</title>
+  <link href="./css/style.css" rel="stylesheet">
   <script language="javascript" type="text/javascript">
     function OnButtonClick() {
         fetch("http://localhost:5000", {
@@ -34,6 +35,7 @@
     </br>
     <label id="002">勤務日数 : </label>
     <input type="text" name="days" size="5" maxlenglabel="2" value="">
+    </br>
     </br>
     <input type="submit" value="パラメータの保存" />
     </br>
