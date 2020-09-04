@@ -30,10 +30,10 @@
   </head>
 <body>
   <form name="formname" id="id_form" action="">
-    <label id="001">従業員数 : </label>
+    <label id="001">従業員数（人） : </label>
     <input type="text" name="person" size="5" maxlenglabel="2" value="">
     </br>
-    <label id="002">勤務日数 : </label>
+    <label id="002">勤務日数（日）: </label>
     <input type="text" name="days" size="5" maxlenglabel="2" value="">
     </br>
     </br>

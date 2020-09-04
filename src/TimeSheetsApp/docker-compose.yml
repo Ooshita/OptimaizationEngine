@@ -1,0 +1,25 @@
+version: '3'
+services:
+  php:
+    build:
+      context: ./front
+      dockerfile: ./Dockerfile
+    container_name: front79
+    volumes: 
+      - prameter_share:/front/src/work
+    ports:
+      - 80:80
+    restart: always
+
+  tabu:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: tabusearch95
+    ports:
+      - 5000:5000
+    volumes:
+      - prameter_share:/front/src/work
+    restart: always
+volumes: 
+  prameter_share:
