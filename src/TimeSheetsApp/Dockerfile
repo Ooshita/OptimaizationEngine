@@ -7,6 +7,6 @@ RUN pip install pandas
 RUN pip install tabulate
 RUN pip install flask
 
-WORKDIR /TimeSheetsApp/src/work
-Add . /TimeSheetsApp/src/work
+WORKDIR /backend/src/work
+Add . /backend/src/work
 CMD ["flask", "run","--host", "0.0.0.0", "--port", "5000"]

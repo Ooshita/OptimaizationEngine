@@ -8,7 +8,7 @@ class TabuSearch():
   penalty_arr = []
 
   def __init__(self):
-    with open("/front/src/work/parameter.txt") as f:
+    with open("/parameter/share/parameter.txt") as f:
       param = f.read().split(",")
     person_num = int(param[0])
     days_num = int(param[1])

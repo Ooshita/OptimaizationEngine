@@ -1,6 +1,6 @@
 <?php
     if(isset($_GET['person'], $_GET['days'])) {
-      $fp = fopen("parameter.txt", "w");
+      $fp = fopen("/parameter/share/parameter.txt", "w");
       $write_str = $_GET['person'].",".$_GET['days'];
       fwrite($fp, $write_str);
       fclose($fp);

@@ -1,25 +1,19 @@
 version: '3'
 services:
   php:
-    build:
-      context: ./front
-      dockerfile: ./Dockerfile
-    container_name: front79
-    volumes: 
-      - prameter_share:/front/src/work
+    image: noriakioshita/timesheet_frontend_r:latest
     ports:
-      - 80:80
+      - 8080:8080
     restart: always
+    volumes: 
+      - parameter_share:/parameter/share
 
   tabu:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    container_name: tabusearch95
+    image: noriakioshita/timesheet_backend
     ports:
       - 5000:5000
-    volumes:
-      - prameter_share:/front/src/work
     restart: always
+    volumes: 
+      - parameter_share:/parameter/share
 volumes: 
-  prameter_share:
+  parameter_share:
